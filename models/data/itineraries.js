@@ -6,129 +6,146 @@ import City from '../City.js';
 const itineraries = [{
     name: 'Angkor Wats Temple Complex',
     city_id: 'Siem Reap',
-    price: 200,
+    price: 4,
     duration: 120,
     tags: ['#siemreap', '#adventure', '#budism'],
-    photo: 'https://www.mundo-nomada.com/wp-content/uploads/2020/03/Templos-de-Angkor-Wat-e1590459718747-1200x900.jpg'
+    photo: 'https://www.mundo-nomada.com/wp-content/uploads/2020/03/Templos-de-Angkor-Wat-e1590459718747-1200x900.jpg',
+    comments: []
 }, {
     name: 'Temple of Water',
     city_id: 'Bali',
-    price: 20,
+    price: 1,
     duration: 60,
     tags: ['#nature', '#temple', '#peace'],
-    photo: 'https://images-ext-1.discordapp.net/external/hJTN2F_gs1ELLRWELD4hp6JH5HDQN8__NIhq_dQuAEg/https/theworldtravelguy.com/wp-content/uploads/2019/03/DSCF4529_1200.jpg?width=1014&height=676'
+    photo: 'https://images-ext-1.discordapp.net/external/hJTN2F_gs1ELLRWELD4hp6JH5HDQN8__NIhq_dQuAEg/https/theworldtravelguy.com/wp-content/uploads/2019/03/DSCF4529_1200.jpg?width=1014&height=676',
+    comments: []
 }, {
     name: 'Mount Fuji',
     city_id: 'Honshu Island',
-    price: 200,
+    price: 4,
     duration: 480,
     tags: ['#culture', '#snow', '#hikkinglove'],
-    photo: 'https://www.meteorologiaenred.com/wp-content/uploads/2020/04/Vistas-del-monte.jpg'
+    photo: 'https://www.meteorologiaenred.com/wp-content/uploads/2020/04/Vistas-del-monte.jpg',
+    comments: []
 }, {
     name: 'Matira beach',
     city_id: 'Bora Bora Island',
-    price: 100,
+    price: 2,
     duration: 300,
     tags: ['#beach', '#adventure', '#sun'],
-    photo: 'https://images-ext-2.discordapp.net/external/5JogXXNw2iYuKd0LqSkDidZ7UnJlGJEWDivz6zgb4_Q/https/media.kiwi.com/wp-content/uploads/2021/06/veligandu-island-beach-of-the-maldives-795x360.jpg'
+    photo: 'https://images-ext-2.discordapp.net/external/5JogXXNw2iYuKd0LqSkDidZ7UnJlGJEWDivz6zgb4_Q/https/media.kiwi.com/wp-content/uploads/2021/06/veligandu-island-beach-of-the-maldives-795x360.jpg',
+    comments: []
 }, {
     name: 'Mount Otemanu',
     city_id: 'Bora Bora Island',
-    price: 120,
+    price: 3,
     duration: 240,
     tags: ['#beach', '#adventure', '#treking'],
-    photo: 'https://images-ext-1.discordapp.net/external/ENkeAeE0mgvgdWCKzVzYC2NQh-yhcC2FnBNkEqlzMpA/https/www.gototravelguides.net/images/photos/borabora_P1000780.jpg?width=901&height=676'
+    photo: 'https://images-ext-1.discordapp.net/external/ENkeAeE0mgvgdWCKzVzYC2NQh-yhcC2FnBNkEqlzMpA/https/www.gototravelguides.net/images/photos/borabora_P1000780.jpg?width=901&height=676',
+    comments: []
 }, {
     name: 'National Park Roraima',
     city_id: 'Bolívar',
-    price: 200,
+    price: 4,
     duration: 480,
     tags: ['#', '#', '#'],
-    photo: 'https://dam.ngenespanol.com/wp-content/uploads/2021/04/GettyImages-139812035.jpg'
+    photo: 'https://dam.ngenespanol.com/wp-content/uploads/2021/04/GettyImages-139812035.jpg',
+    comments: []
 }, {
     name: 'Angel Falls',
     city_id: 'Bolívar',
-    price: 200,
+    price: 4,
     duration: 120,
     tags: ['#', '#', '#'],
-    photo: 'http://t2.gstatic.com/licensed-image?q=tbn:ANd9GcSybaIKh9qn2LWwkRlWHc694clhB4kB7t-VxxbLMQd14usIcjB3XzKwQnz7huOfgXz1'
+    photo: 'http://t2.gstatic.com/licensed-image?q=tbn:ANd9GcSybaIKh9qn2LWwkRlWHc694clhB4kB7t-VxxbLMQd14usIcjB3XzKwQnz7huOfgXz1',
+    comments: []
 }, {
     name: 'Honshu Tour',
     city_id: 'Honshu Island',
-    price: 20,
+    price: 1,
     duration: 160,
     tags: ['#interesting', '#culture', '#croud'],
-    photo: 'https://s3-ap-northeast-1.amazonaws.com/bhive-jp/media/yabai/article/2699/43.jpg'
+    photo: 'https://s3-ap-northeast-1.amazonaws.com/bhive-jp/media/yabai/article/2699/43.jpg',
+    comments: []
 }, {
     name: 'Tsunami Monument',
     city_id: 'Maldives Islands',
-    price: 10,
+    price: 1,
     duration: 60,
     tags: ['#nature', '#beach', '#peace'],
-    photo: 'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0e/af/19/85/tsunami-monument.jpg?w=1200&h=-1&s=1'
+    photo: 'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0e/af/19/85/tsunami-monument.jpg?w=1200&h=-1&s=1',
+    comments: []
 }, {
     name: 'Through the Fields',
     city_id: 'Bali',
-    price: 20,
+    price: 1,
     duration: 160,
     tags: ['#nature', '#peace'],
-    photo: 'https://d18sx48tl6nre5.cloudfront.net/webp_md_28ddbaa5efa991d343efc7c1d602432d.webp'
+    photo: 'https://d18sx48tl6nre5.cloudfront.net/webp_md_28ddbaa5efa991d343efc7c1d602432d.webp',
+    comments: []
 }, {
     name: 'Veligandu Island Beach',
     city_id: 'Maldives Islands',
-    price: 20,
+    price: 1,
     duration: 160,
     tags: ['#nature', '#beach', '#peace'],
-    photo: 'https://i.im.ge/2022/09/06/OZ78aa.veligandu-island-beach-of-the-maldives-795x360.jpg'
+    photo: 'https://i.im.ge/2022/09/06/OZ78aa.veligandu-island-beach-of-the-maldives-795x360.jpg',
+    comments: []
 }, {
     name: 'Ubud',
     city_id: 'Bali',
-    price: 20,
+    price: 1,
     duration: 160,
     tags: ['#nature', '#beach', '#peace'],
-    photo: 'https://gadsventure.com/wp-content/uploads/2019/12/Webp.net-resizeimage-2019-12-18T144431.703-800x600.jpg'
+    photo: 'https://gadsventure.com/wp-content/uploads/2019/12/Webp.net-resizeimage-2019-12-18T144431.703-800x600.jpg',
+    comments: []
 }, {
     name: 'Traditional',
     city_id: 'Zambia',
-    price: 20,
+    price: 1,
     duration: 160,
     tags: ['#tradition', '#dance', '#happyness'],
-    photo: 'https://gpjs3bucket.s3.amazonaws.com/wp-content/uploads/2018/08/26141032/GPJNew_Zambia_PP_Crowds-1_Web.jpg'
+    photo: 'https://gpjs3bucket.s3.amazonaws.com/wp-content/uploads/2018/08/26141032/GPJNew_Zambia_PP_Crowds-1_Web.jpg',
+    comments: []
 }, {
     name: 'Adventure Time',
     city_id: 'Zambia',
-    price: 20,
+    price: 1,
     duration: 160,
     tags: ['#nature', '#adrenaline', '#power'],
     photo: 'https://www.southluangwasafaris.com/wp-content/uploads/2018/04/livadv_2013-03-207.x89638.jpg'
 }, {
     name: 'Fauna and Flora',
     city_id: 'Zambia',
-    price: 20,
+    price: 1,
     duration: 160,
     tags: ['#nature', '#animals', '#peace'],
-    photo: 'https://www.enkosiafrica.com/wp-content/uploads/2018/01/enkosi-africa-safari-zambia-lower-zambezi-sausage-tree-camp-.jpg'
+    photo: 'https://www.enkosiafrica.com/wp-content/uploads/2018/01/enkosi-africa-safari-zambia-lower-zambezi-sausage-tree-camp-.jpg',
+    comments: []
 }, {
     name: 'Water, Sand and Air',
     city_id: 'Cairo Citadel',
-    price: 20,
+    price: 1,
     duration: 160,
     tags: ['#nature', '#adventure', '#amazing'],
-    photo: 'https://images.memphistours.com/large/495962174_Cairo%20City%20Tour.jpg'
+    photo: 'https://images.memphistours.com/large/495962174_Cairo%20City%20Tour.jpg',
+    comments: []
 }, {
     name: 'City Food Tour',
     city_id: 'Cairo Citadel',
-    price: 20,
+    price: 1,
     duration: 160,
     tags: ['#yummy!', '#restaurant', '#delicious'],
-    photo: 'https://c.myholidays.com/blog/blog/content/images/2021/12/Citadel-View-Restaurant-Savoring-French-Cuisines-min.jpg'
+    photo: 'https://c.myholidays.com/blog/blog/content/images/2021/12/Citadel-View-Restaurant-Savoring-French-Cuisines-min.jpg',
+    comments: []
 }, {
     name: 'Citadel Tour',
     city_id: 'Cairo Citadel',
-    price: 20,
+    price: 1,
     duration: 160,
     tags: ['#culture', '#peace'],
-    photo: 'https://i.im.ge/2022/08/31/OERMl1.salahCitadelCairoCity.png'
+    photo: 'https://i.im.ge/2022/08/31/OERMl1.salahCitadelCairoCity.png',
+    comments: []
 }]
 
 async function createItineraries(arrayItineraries) {
