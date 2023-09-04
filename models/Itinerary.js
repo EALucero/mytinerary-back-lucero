@@ -7,7 +7,8 @@ let schema = new Schema({
     duration: { type: Number, required: true },
     tags: { type: [String], required: true },
     photo: { type: String, required: true },
-    city_id: { type: Types.ObjectId, required: true, ref: 'cities' }
+    city_id: { type: Types.ObjectId, required: true, ref: 'cities' },
+    coments: { type: [String] },
 }, {
     timestamps: true
 })

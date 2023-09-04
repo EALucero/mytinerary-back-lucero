@@ -21,7 +21,7 @@ export default async (req, res, next) => {
         }        
         let allCities = await City
             .find(objetoDeBusqueda, 'country city photo smallDescription admin_id')
-            .populate('admin_id', 'photo name mail -_id')
+            .populate('admin_id', 'photo name mail _id')
             .sort(objetoDeOrdenamiento)
         //let allCities = await City.find().select('country city photo smallDescription admin_id').populate('admin_id', 'photo name mail -_id')
         if (allCities.length > 0) {
