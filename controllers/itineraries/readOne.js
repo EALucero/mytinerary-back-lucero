@@ -2,8 +2,7 @@ import Itinerary from "../../models/Itinerary.js";
 
 export default async (req, res, next) => {
     try {
-        let oneItinerary = await Itinerary.findOne({ _id: req.params.id }).select("mail photo admin_id -_id")
-        
+        let oneItinerary = await Itinerary.findOne({ _id: req.params.id }).select("mail photo admin_id -_id")    
 
         if (oneItinerary) {
             return res.status(200).json({
