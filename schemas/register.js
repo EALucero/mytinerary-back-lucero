@@ -10,7 +10,7 @@ let registerSchema = joi.object({
     mail: joi.string().required().email(),
     password: joi.string().required(),
     country: joi.string().required(),
-    lastname: joi.string().min(3).max(20).empty("").messages({
+    lastName: joi.string().min(3).max(20).empty("").messages({
         'string.min': 'Lastname must have at least 3 characters long',
         'string.max': 'Lastname must have less than or equal to 25 characters'
     }),
